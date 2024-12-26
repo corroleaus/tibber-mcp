@@ -549,26 +549,11 @@ async def handle_get_historic(
                     text=f"Invalid date format: {start_date}. Please use YYYY-MM-DD format."
                 )]
         else:
-            if start_date:
-                try:
-                    date_from = datetime.strptime(start_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-                    historic_data = await home.get_historic_data_date(
-                        date_from=date_from,
-                        n_data=count,
-                        resolution=resolution,
-                        production=production
-                    )
-                except ValueError:
-                    return [types.TextContent(
-                        type="text",
-                        text=f"Invalid date format: {start_date}. Please use YYYY-MM-DD format."
-                    )]
-            else:
-                historic_data = await home.get_historic_data(
-                    count,
-                    resolution=resolution,
-                    production=production
-                )
+            historic_data = await home.get_historic_data(
+                count,
+                resolution=resolution,
+                production=production
+            )
         if not historic_data:
             return [types.TextContent(
                 type="text",
