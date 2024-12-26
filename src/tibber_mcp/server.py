@@ -536,7 +536,6 @@ async def handle_get_historic(
         if start_date:
             try:
                 date_from = datetime.strptime(start_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-                print(date_from, file=sys.stderr)
                 historic_data = await home.get_historic_data_date(
                     date_from=date_from,
                     n_data=count,
