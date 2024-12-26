@@ -42,6 +42,7 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 
 <details>
   <summary>Development/Unpublished Servers Configuration</summary>
+  
   ```
   "mcpServers": {
     "tibber-mcp": {
@@ -55,10 +56,12 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
     }
   }
   ```
+
 </details>
 
 <details>
   <summary>Published Servers Configuration</summary>
+
   ```
   "mcpServers": {
     "tibber-mcp": {
@@ -69,6 +72,7 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
     }
   }
   ```
+
 </details>
 
 ## Development
