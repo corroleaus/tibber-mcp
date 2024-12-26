@@ -5,8 +5,8 @@ description = "Tibber MCP Server"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
- "mcp>=1.1.0",
- "pytibber>=0.30.8",
+    "mcp>=1.1.2",
+    "pytibber>=0.30.8",
 ]
 
 [build-system]
