@@ -40,24 +40,23 @@ Each tool provides detailed information about energy usage, costs, and pricing t
 On MacOS: `~/Library/Application\ Support/Claude/claude_desktop_config.json`
 On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 
-<details>
-  <summary>Development/Unpublished Servers Configuration</summary>
-
-  ```
-  "mcpServers": {
-    "tibber-mcp": {
-      "command": "uv",
-      "args": [
-        "--directory",
-        "/path/to/tibber-mcp",
-        "run",
-        "tibber-mcp"
-      ]
+```
+"mcpServers": {
+  "tibber-mcp": {
+    "command": "uv",
+    "args": [
+      "--directory",
+      "/path/to/tibber-mcp",
+      "run",
+      "tibber-mcp"
+    ],
+    "env": {
+      "TIBBER_TOKEN": "very-secret"
     }
   }
-  ```
+}
+```
 
-</details>
 
 ## Development
 
