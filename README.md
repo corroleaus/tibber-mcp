@@ -1,6 +1,6 @@
 # tibber-mcp MCP Server
 
-An MCP server for interacting with the Tibber API. This server provides tools to access energy consumption, production, pricing, and real-time data from Tibber homes.
+An MCP server for interacting with the Tibber API. This server provides tools to access energy consumption, production, pricing, and real-time data from Tibber homes from MCP hosts e.g Claude desktop.
 
 ## Features
 
@@ -42,7 +42,7 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 
 <details>
   <summary>Development/Unpublished Servers Configuration</summary>
-  
+
   ```
   "mcpServers": {
     "tibber-mcp": {
@@ -51,22 +51,6 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
         "--directory",
         "/path/to/tibber-mcp",
         "run",
-        "tibber-mcp"
-      ]
-    }
-  }
-  ```
-
-</details>
-
-<details>
-  <summary>Published Servers Configuration</summary>
-
-  ```
-  "mcpServers": {
-    "tibber-mcp": {
-      "command": "uvx",
-      "args": [
         "tibber-mcp"
       ]
     }
